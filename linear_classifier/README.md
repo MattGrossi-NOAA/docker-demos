@@ -13,7 +13,7 @@ Created:  May 10, 2023
 
 This document describes the minimal working example (MWE) of a containerized Python model presented in this repository but also provides brief introductions to containerization in general and Docker more specifically. These introductory sections are optionally expandable for the interested reader: simply click to learn more.
 
-For an example of a jupyter notebook container, see `DockerDemo/linear_model_jupyter/`, which provides a working notebook used to develop and test this model.
+For an example of a jupyter notebook container, see `docker-demo/linear_model_jupyter/`, which provides a working notebook used to develop and test this model.
 
 ## Why containerization?
 
@@ -42,7 +42,7 @@ A **container** is a lightweight and portable package containing source code and
 
 More accurately, _containers_ are runnable instances of _images_ that run in isolation from all other processes on the host machine. An image, in turn, is a read-only template that contains custom, isolated filesystems; all dependencies, configurations, scripts, binaries, _etc._ needed to run the software; and container configurations such as environmental variables, commands to run, and other metadata (see, _e.g._, [Docker overview](https://docs.docker.com/get-started/overview/)).
 
-> 1F4A1 **Example:** As any Python developer knows, package management is critically important in Python -- and if one is not careful, things can get pretty messy rather quickly when different versions of packages start clashing with each other.[^1] Package management is one main reason Anaconda exists. It is also why best practices for Python traditionally involves working in project-specific virtual machines (VMs). Containers can be likened to VMs, but under the hood they are quite a bit different (and arguably better.)
+> :bulb: **Example:** As any Python developer knows, package management is critically important in Python -- and if one is not careful, things can get pretty messy rather quickly when different versions of packages start clashing with each other.[^1] Package management is one main reason Anaconda exists. It is also why best practices for Python traditionally involves working in project-specific virtual machines (VMs). Containers can be likened to VMs, but under the hood they are quite a bit different (and arguably better.)
 >
 > [^1]: This is not to pick on Python, as it's true of many/most programming languages.
 
@@ -135,7 +135,7 @@ Think of this as a series of commands with each instruction creating a layer wit
 
 The next command creates a working directory (`WORKDIR`) inside the container. Recall that containers have their own isolated file structure. We are creating a directory a "home", made-up user "[jovyan](https://github.com/jupyter/docker-stacks/issues/358)", and "mymodel" directories in which we `COPY` our `requirements.txt` file so that the container will have access to it.
 
-> Note: If we do not explicitly copy items into the container's file structure, the container will not have any idea they exist. This is what is meant by "isolated file system."
+> :writing_hand: Note: If we do not explicitly copy items into the container's file structure, the container will not have any idea they exist. This is what is meant by "isolated file system."
 
 Next, the required packages are installed from the text file. This is done by telling Docker to `RUN` the appropriate shell command.
 
@@ -212,7 +212,7 @@ DockerDemo/linear_classifier/
 ├── overview.md
 ```
 
-> :bulb: For a Jupyter notebook container demo, see `DockerDemo/linear_classifer_jupyter/`, which contains a Jupyter notebook used to develop and test this linear classifier.
+> :bulb: For a Jupyter notebook container demo, see `docker-demo/linear_classifer_jupyter/`, which contains a Jupyter notebook used to develop and test this linear classifier.
 
 ### The contents
 
