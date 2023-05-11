@@ -209,7 +209,7 @@ DockerDemo/linear_classifier/
 ├── docker-compose.yml
 ├── banknote.csv
 ├── skin.csv
-├── overview.md
+├── README.md
 ```
 
 > :bulb: For a Jupyter notebook container demo, see `docker-demo/linear_classifer_jupyter/`, which contains a Jupyter notebook used to develop and test this linear classifier.
