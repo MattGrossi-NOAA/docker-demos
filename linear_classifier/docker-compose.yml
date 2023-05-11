@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  linearclassifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/jovyan/model
+    command: python linear_classifier.py --data=banknote.csv --seed=1 --max_epochs=10 --verbose
+#    command: python linear_classifier.py --data=skin.csv --seed=1 --lr=1e-3 --max_epochs=50 --verbose

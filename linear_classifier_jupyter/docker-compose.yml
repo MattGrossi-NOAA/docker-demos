@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  linearClassifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    stdin_open: true
+    tty: true
+    image: model:latest
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/home/jovyan/model
