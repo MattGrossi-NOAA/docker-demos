@@ -98,7 +98,7 @@ This file contains a simple list of non-base libraries the model requires, one p
 numpy==1.24.3
 ```
 
-> 1F4A1 **Hint:** Look at the `import` calls in all relevant scripts to know what needs to be included in this container. Remember that only _non-base_ libraries need to be listed.
+> :bulb: **Hint:** Look at the `import` calls in all relevant scripts to know what needs to be included in this container. Remember that only _non-base_ libraries need to be listed.
 
 Note that the version number is technically not required here, but it is best practice (and much safer) to include it. If omitted, the most recent version of the package(s) will be downloaded, and there is no guarantee those versions will be compatible with the scripts.
 
