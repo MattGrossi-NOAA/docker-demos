@@ -6,5 +6,3 @@ COPY requirements.txt .
 
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
-
-#CMD ["python", "linear_classifier.py", "--data=banknote.csv", "--seed=1", "--verbose"]
