@@ -144,7 +144,7 @@ Next, the required packages are installed from the text file. This is done by te
 Finally, once the container is launched, the model is run by issuing the command (`CMD`) as in bash. This line could also have been written:
 
 ```
-RUN python ./home/jovian/mymodel/myNiftyUselessModel.py
+RUN python ./home/jovyan/mymodel/myNiftyUselessModel.py
 ```
 
 ### docker-compose.yml
@@ -159,7 +159,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - /home/user/modelDir:home/jovian/mymodel
+      - /home/user/modelDir:home/jovyan/mymodel
 ```
 This is telling Docker what version of [Docker Compose](https://docs.docker.com/compose/) to use, and, under `service`, an arbitrary tag "mymodel" is provided to tag and reference the container, followed by instructions on how to configure (`build`) the container. The container is to be built from the `Dockerfile` located in the same directory as this docker-compose file (hence the `context: .` line -- note the dot!) If the `Dockerfile` was nested somewhere deeper in the file structure, we would pass the directory chain to `context`. The last step maps the local directory in which the model resides (see above) to the isolated "mymodel" directory created within the container by the Dockerfile. This step allows the container to interact with the local files; otherwise, it would have no idea they exist.
 
