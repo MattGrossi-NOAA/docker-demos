@@ -6,6 +6,8 @@
 
 This repository contains minimal working examples (MWEs) of Docker containerization to demonstrate how to configure and use containers. Its primary purpose is twofold: first, to help me learn Docker myself, and second, to serve as a teaching tool when I introduce others to containerization. It is my intent that the repository will continue to grow as I encounter new applications for Docker and dive deeper into its many capabilities and sophistications. It is also very like to be updated, edited, or revised as I continue to learn more.
 
+The contents are as follows:
+
 ### /linear\_classifier
 
 <details>
@@ -17,15 +19,12 @@ For this demo, I created and containerized a straightforward linear classificati
 
 </details>
 
-
 ### /linear\_classifier\_jupyter
 
 <details>
   <summary>
   A containerized Jupyter notebook used to develop a simple Python model
   </summary>
-
-</details>
 
 This demo contains a working Jupyter notebook used to develop and test the simple linear classifier model from the [linear\_classifier](https://github.com/mdgrossi/docker-demos/tree/main/linear_classifier_jupyter) example. This container deploys a Jupyter server with which the user can familiarly interact via a web browser. For a description and discussion of the demo, see the accompanying [README therein](https://github.com/mdgrossi/docker-demos/blob/main/linear_classifier_jupyter/README.md).
 
