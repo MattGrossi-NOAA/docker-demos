@@ -286,6 +286,8 @@ And that is one of the beauties of containers and why we use them!
 4. Take time to peruse the documentation for both [Docker](https://docs.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) to fully appreciate the range of capabilities and options these tools offer.
 5. Start each new project from now on in a container instead of a virtual machine. There is undoubtedly a learning curve that will take some time to navigate, but you will (eventually) be glad you did.
 
-## Disclaimer
+## Disclaimers
+
+The author's stated affiliation is for professional purposes only and is not an indication of the author representing the National Oceanic and Atmospheric Administration (NOAA) in any official or unofficial capacity. This repository is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce.
 
 This overview is subject to change as I myself learn more about Docker, how to use and implement it, its capabilities, _etc_. This document, neither in its current nor any future form, is not intended to replace the official documentation referenced above. Feedback, suggestions, or corrections are welcome, keeping in mind that this document assumes no authoritative nature whatsoever.
