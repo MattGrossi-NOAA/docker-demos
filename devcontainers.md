@@ -31,13 +31,13 @@ Open VS Code. On the welcome landing page, click "Open Folder..." and select the
 1. Click the blue "Open a Remote Window" button in the bottom left corner of VS Code. The icon looks like two angled L's.
 2. In the menu that appears at the top, select "Reopen in Container"
 3. In the next menu, select "Add configuration to workspace"
-4. If a `docker-compose.yml` and/or `Dockerfile` exist with the current directory, the next menu will allow you to choose which one to build the container from ("From 'docker-compose.yml'" or "From 'Dockerfile'"). Select the desired option. A popup will appear in the bottom right as the container starts to build. Click "Show Log" to monitor the progress in a terminal pane.
+4. If a `docker-compose.yml` and/or `Dockerfile` exist with the current directory, the next menu will allow you to choose which one to build the container from ("From 'docker-compose.yml'" or "From 'Dockerfile'"). Select the desired option. A popup will appear in the bottom right as the container starts to build: "Starting Dev Container (show log)". Click the message to monitor the progress in a terminal pane within VS Code.
 
 Behind the scenes, these steps create a new `.devcontainer` directory containing container configuration files.
 
 #### Using an existing `devcontainer`
 
-If you've run the steps above once before, VS Code will detect the `.devcontainer` directory when you navigate to the project directory. A popup should appear in the bottom right corner of VS Code stating that the folder contains a Dev Container configuration file. Click the blue "Reopen in Container" button to spin up the container.
+If you've run the steps above once before, VS Code will detect the `.devcontainer` directory when you navigate to the project directory. A popup should appear in the bottom right corner of VS Code stating that the folder contains a Dev Container configuration file. Click the blue "Reopen in Container" button to spin up the container as in Step 1 above. Click the "Starting Dev Container (show log)" message in the bottom right corner to monitor the progress in a terminal pane within VS Code.
 
 #### Closing the container
 
